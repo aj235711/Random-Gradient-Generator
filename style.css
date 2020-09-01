@@ -28,3 +28,17 @@ h5 {
 	transform: scale(1.1);
 	cursor: pointer;
 }
+
+.timer{border: dotted 2px black;margin: 2rem;margin-left: 10rem;margin-right: 10rem;padding-bottom: 1.5rem}
+
+#time{border-radius: 200px;padding: 4px 0; border-bottom: 1px solid #ccc; background-color: transparent;text-align: center;}
+
+#intervalb{	background-color: rgb(45, 72, 205);
+	padding: 20px;
+	border: 2px solid rgba(79, 94, 171, 0.5);
+	border-radius: 20px;
+	outline: none;
+	color: white;
+	box-shadow: 5px 5px 10px #444;
+	transition: all 0.2s;
+	font-family: "Times New Roman";}

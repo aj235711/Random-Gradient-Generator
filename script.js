@@ -1,11 +1,13 @@
 var body = document.getElementById("gradient");
 var button = document.querySelector("button");
+var intervalb=document.querySelector("#intervalb");
 var h5 = document.querySelector("h5");
 var css = getComputedStyle(body);
 var bg = css.background;
+
 h5.innerHTML = bg;
 
- 
+
 button.addEventListener("click", createBG)
 
 function createBG() {
@@ -22,4 +24,14 @@ function createBG() {
 	+ arr[1][0] + ", " + arr[1][1] + ", " + arr[1][2] + "), rgb("
 	+ arr[2][0] + ", " + arr[2][1] + ", " + arr[2][2] + "))";
 	h5.innerHTML = body.style.background + ";";
+}
+
+intervalb.addEventListener("click",interbggen)
+var settimer;
+function interbggen() {
+  clearInterval(settimer);
+	var inter =  inter = document.getElementById("time").value;
+  inter=inter*1000
+  settimer= setInterval(createBG,inter)
+
 }
